@@ -9,31 +9,33 @@
 <body>
 	<header>
 		<div class="container">
-			<h1>sit <span>on</span> chair</h1>
-			<nav>
-				<ul>
-					<li class="dropdown">
-						<a href="#">o firmie</a>
-						<ul class="dropdown-content">
-							<li>
-								<a href="#">aktualności</a>
-							</li>
-							<li>
-								<a href="#">nasz zespół</a>
-							</li>
-							<li>
-								<a href="#">historia</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">galeria</a>
-					</li>
-					<li>
-						<a href="#">kontakt</a>
-					</li>
-				</ul>
-			</nav>
+			<div class="wrapper">
+				<h1>sit <span>on</span> chair</h1>
+				<nav>
+					<ul>
+						<li class="dropdown">
+							<a href="#">o firmie</a>
+							<ul class="dropdown-content">
+								<li>
+									<a href="#">aktualności</a>
+								</li>
+								<li>
+									<a href="#">nasz zespół</a>
+								</li>
+								<li>
+									<a href="#">historia</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">galeria</a>
+						</li>
+						<li>
+							<a href="#">kontakt</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
 	<section id="gallery">
@@ -132,7 +134,7 @@
 						</p>
 						<p>
 							Gwarancja 5 lat
-						</p>	
+						</p>
 					</div>
 					<button>dołącz</button>
 				</div>
@@ -171,40 +173,53 @@
 	</section>
 	<section id="contact">
 		<div class="container">
-			<h2 class="border-bottom">kontakt</h2>
-			<form>
-				<input type="text" placeholder="Imię"/>
-				<input type="text" placeholder="email"/>
-				<textarea placeholder="Wiadomość"></textarea>
-				<img src="images/red_chair.png" alt="chair" title="chair"/>
-				<input id="acceptTerms" type="checkbox" />
-				<label for="acceptTerms">Zgadzam się na przetwarzanie danych osobowych</label>
-				<submit>Wyślij</submit>
-			</form>
+			<div class="wrapper">
+				<div>
+					<h2 class="border-bottom">kontakt</h2>
+					<form>
+						<div class="wrapper-left">
+							<input type="text" placeholder="Imię"/>
+							<input type="text" placeholder="email"/>
+							<textarea placeholder="Wiadomość"></textarea>
+						</div>
+						<div class="wrapper-right">
+							<img src="images/red_chair.png" alt="chair" title="chair"/>
+							<input id="acceptTerms" type="checkbox" checked="checked"/>
+							<label for="acceptTerms"><span></span>Zgadzam się na przetwarzanie danych osobowych</label>
+							<submit>Wyślij</submit>
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
 	</section>
 	<footer>
 		<div class="container">
-			<div>
-				<p>
-					Copyright 2014 | All Rights Reserved - Sit On Chair
-				</p>
-			</div>
-			<div>
-				<ul>
-					<li>
-						<a href="#"><img src="images/flickr.png" alt="flickr" title="flickr"/></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/vimeo.png" alt="vimeo" title="vimeo"/></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/pinterest.png" alt="pinterest" title="pinterest"/></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/twitter.png" alt="twitter" title="twitter"/></a>
-					</li>
-				</ul>
+			<div class="wrapper">
+				<div>
+					<div class="wrapper-left">
+						<p>
+							Copyright 2014 | All Rights Reserved - Sit On Chair
+						</p>
+					</div>
+					<div  class="wrapper-right">
+						<ul>
+							<li>
+								<a href="#"><img src="images/flickr.png" alt="flickr" title="flickr"/></a>
+							</li>
+							<li>
+								<a href="#"><img src="images/vimeo.png" alt="vimeo" title="vimeo"/></a>
+							</li>
+							<li>
+								<a href="#"><img src="images/pinterest.png" alt="pinterest" title="pinterest"/></a>
+							</li>
+							<li>
+								<a href="#"><img src="images/twitter.png" alt="twitter" title="twitter"/></a>
+							</li>
+						</ul>
+						<h1>sit <span>on</span> chair</h1>
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>

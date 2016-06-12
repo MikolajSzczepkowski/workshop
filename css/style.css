@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway&subset=latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900,200&subset=latin-ext);
 
 * {
   font-family: 'Raleway', sans-serif;
@@ -21,6 +21,7 @@ body {
   margin: 0 auto;
 }
 h1, h2, h3, button {
+  font-weight: 400;
   text-transform: uppercase;
 }
 span {
@@ -57,7 +58,7 @@ nav ul li a {
   padding: 10px 20px;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
 }
 nav ul li a:hover, .dropdown-content li a:hover {
   color: #d8d8d8;
@@ -154,7 +155,8 @@ nav ul li a:hover, .dropdown-content li a:hover {
   font-size: 14px;
   line-height: 24px;
 }
-button {
+button,
+form submit {
   margin: 30px 0 0 0;
   padding: 10px 20px;
   border: none;
@@ -169,6 +171,7 @@ button {
 }
 .border-bottom {
   width: 145px;
+  padding-bottom: 5px;
   border-bottom: 5px solid #24ba9f;
 }
 .example {
@@ -214,13 +217,16 @@ button {
   height: 720px;
   background: #f1f1f1;
 }
-#prices .container .wrapper {
+#prices .container .wrapper,
+#contact .container {
   height: 100%;
   padding: 50px 0 0 0
 }
-#prices h2 {
+#prices h2,
+#contact h2 {
   margin: 0 0 75px 14px;
   width: 330px;
+  font-weight: 400;
   color: #5c5c5c;
 }
 .choice {
@@ -262,10 +268,12 @@ button {
 .choice h3 {
   margin: 20px 0;
   text-align: center;
+  font-size: 30px;
+  font-weight: 400;
   color: #24ba9f;
 }
 .choice .price-circle {
-  top: 60px;
+  top: 70px;
   width: 120px;
   height: 120px;
 }
@@ -324,6 +332,9 @@ button {
   background: #24ba9f;
   border: 1px solid #24ba9f;
 }
+.choice:hover h3{
+  color: #fff;
+}
 .choice:hover .circle .inner-circle,
 .choice:hover .price-circle,
 .choice:hover button {
@@ -339,4 +350,109 @@ button {
 }
 .choice:hover .benefits p:nth-child(even) {
   background: #f1f1f1;
+}
+#contact {
+    height: 550px;
+}
+#contact .wrapper,
+#contact .container {
+  height: 100%;
+}
+#contact .wrapper > div,
+footer .wrapper > div {
+  height: 100%;
+  padding: 0 14px;
+}
+#contact h2 {
+  margin: 0 0 50px 0;
+}
+.wrapper-left {
+  float: left;
+  width: 60%;
+}
+.wrapper-right {
+  position: relative;
+  float: right;
+  box-sizing: border-box;
+  width: 35%;
+  margin: 0 0 0 5%;
+}
+form .wrapper-right {
+  height: 338px;
+}
+.wrapper-left input, form textarea {
+  display: block;
+  resize: none;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 0 25px 0;
+  padding: 10px;
+  font-size: 32px;
+  font-weight: 200;
+  border: 1px solid #24ba9f;
+}
+form textarea {
+  height: 170px;
+}
+form img {
+  display: block;
+  margin: -20px auto 35px auto;
+}
+input[type="checkbox"] {
+  display:none;
+}
+input[type="checkbox"] + label span {
+  float: left;
+  width: 35px;
+  height: 35px;
+  margin: 0 10px 0 0;
+  border: 1px solid #24ba9f;
+  cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(../images/form_ok.jpg) left top no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+form label {
+  float: left;
+  font-weight: 200;
+  color: #797979;
+}
+form submit {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  margin: 0 auto;
+  padding: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+footer {
+  height: 75px;
+  color: #797979;
+}
+footer .container {
+  height: 100%;
+}
+footer ul,
+footer ul li,
+footer h1 {
+  display: inline-block;
+}
+footer p {
+  margin: 18px 0 0 0;
+}
+footer h1 {
+  float: right;
+  margin: 18px 0 0 0;
+  font-size: 16px;
+  color: #797979;
+}
+footer h1 span {
+  font-weight: 700;
+  color: #797979;
 }
