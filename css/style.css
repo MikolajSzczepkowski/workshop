@@ -117,8 +117,7 @@ nav ul li a:hover, .dropdown-content li a:hover {
   margin: auto 0;
   position: absolute;
 }
-.gallery-wrapper::before {
-  content: "<";
+.gallery-wrapper #buttonPrev {
   position: absolute;
   top: 30%;
   left: 120px;
@@ -126,8 +125,7 @@ nav ul li a:hover, .dropdown-content li a:hover {
   color: #24ba9f;
   cursor: pointer;
 }
-.gallery-wrapper::after {
-  content: ">";
+.gallery-wrapper #buttonNext {
   position: absolute;
   top: 30%;
   right: 120px;
@@ -135,12 +133,21 @@ nav ul li a:hover, .dropdown-content li a:hover {
   color: #24ba9f;
   cursor: pointer;
 }
+.gallery-img span:hover {
+  opacity: 0.5;
+}
 .gallery-img {
   width: 50%;
   float: left;
 }
-.gallery-img img {
+.gallery-img ul {
   float: right;
+}
+.gallery-img ul li {
+  float: right;
+}
+.gallery-img ul li.hide {
+  display: none;
 }
 .gallery-text {
   width: 400px;
@@ -188,6 +195,9 @@ form submit {
   width: 100%;
   height: 50px;
   background: rgba(250, 250, 250, 0.5);
+}
+.example:hover > div {
+  display: none;
 }
 .example div h4 {
   margin: 12px 0 0 12px;
