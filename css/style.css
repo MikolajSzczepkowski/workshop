@@ -434,6 +434,7 @@ form submit {
   color: #24ba9e;
 }
 #compose td:nth-of-type(1n+2) {
+  width: 94px;
   padding-right: 10px;
   text-align: right;
 }
