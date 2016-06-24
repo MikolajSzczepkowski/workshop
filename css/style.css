@@ -228,11 +228,13 @@ form submit {
   background: #f1f1f1;
 }
 #prices .container .wrapper,
+#compose .container .wrapper,
 #contact .container {
   height: 100%;
   padding: 50px 0 0 0
 }
 #prices h2,
+#compose h2,
 #contact h2 {
   margin: 0 0 75px 14px;
   width: 330px;
@@ -361,9 +363,85 @@ form submit {
 .choice:hover .benefits p:nth-child(even) {
   background: #f1f1f1;
 }
-#contact {
-    height: 550px;
+#compose .container {
+  background: #f1f1f1;
 }
+#compose form > div{
+  position: relative;
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 330px;
+  height: 500px;
+  margin: 0 14px;
+}
+#compose h2{
+  margin: 0;
+}
+#compose .border-bottom h2{
+  width: 110%;
+}
+#compose .border-bottom {
+  width: 100%;
+  margin: 0 0 50px 0;
+}
+#compose select {
+  background: #fff;
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+#compose select {
+  color: #797979;
+}
+#compose .select-wrapper {
+  position: relative;
+}
+#compose .select-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 15px 0 15px;
+  border-color: #24ba9e transparent transparent transparent;
+}
+#compose label {
+  font-size: 32px;
+}
+#compose div img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#compose table {
+  background: #fff;
+  border-collapse: collapse;
+  font-size: 24px;
+}
+#compose td:nth-of-type(1n+2),
+#compose tr:first-child td:first-child {
+  color: #24ba9e
+}
+#compose td:first-child {
+  border-right: 1px solid #d8d8d8;
+}
+#compose tr:last-child td{
+  border-top: 1px solid #d8d8d8;
+}
+#compose tr:last-child td:first-child {
+  border-right: none;
+}
+#compose,
+#contact {
+  height: 550px;
+}
+#compose .container,
 #contact .wrapper,
 #contact .container {
   height: 100%;
@@ -390,7 +468,9 @@ footer .wrapper > div {
 form .wrapper-right {
   height: 338px;
 }
-.wrapper-left input, form textarea {
+.wrapper-left input,
+form textarea,
+#compose select {
   display: block;
   resize: none;
   box-sizing: border-box;
